@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="438.0" prefWidth="387.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ims_app.ModifyProductController">
+   <children>
+      <Pane layoutX="12.0" layoutY="19.0" prefHeight="401.0" prefWidth="363.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+         <children>
+                      <Label layoutX="29.0" layoutY="28.0" text="Modify Product">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button alignment="BOTTOM_RIGHT" cancelButton="true" layoutX="291.0" layoutY="360.0" onAction="#onCancelButtonClick" text="Cancel" />
+            <Button alignment="BOTTOM_RIGHT" cancelButton="true" layoutX="200.0" layoutY="360.0" onAction="#onSaveButtonClick" text="Save" />
+            <Pane layoutX="56.0" layoutY="125.0" prefHeight="235.0" prefWidth="303.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="ID" />
+                  <TextField fx:id="modifyProductIDTextField" disable="true" layoutX="57.0" layoutY="9.0" />
+                  <Label layoutX="14.0" layoutY="54.0" text="Name" />
+                  <TextField fx:id="modifyProductNameTextField" layoutX="57.0" layoutY="49.0" />
+                  <Label layoutX="14.0" layoutY="97.0" text="Inv" />
+                  <TextField fx:id="modifyProductInvTextField" layoutX="57.0" layoutY="92.0" prefHeight="25.0" prefWidth="81.0" />
+                  <Label layoutX="14.0" layoutY="139.0" text="Price" />
+                  <TextField fx:id="modifyProductCostTextField" layoutX="57.0" layoutY="134.0" prefHeight="25.0" prefWidth="81.0" />
+                  <Label layoutX="14.0" layoutY="182.0" text="Max" />
+                  <TextField fx:id="modifyProductMaxTextField" layoutX="57.0" layoutY="177.0" prefHeight="25.0" prefWidth="81.0" />
+                  <Label layoutX="165.0" layoutY="182.0" text="Min" />
+                  <TextField fx:id="modifyProductMinTextField" layoutX="206.0" layoutY="177.0" prefHeight="25.0" prefWidth="81.0" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
